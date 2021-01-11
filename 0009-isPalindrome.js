@@ -6,10 +6,10 @@ var isPalindrome = function(x) {
   if(x < 0) return false
   x = x.toString()
   var str1 = x
-  var str2 = ''
-  for(var i = x.length; i >= 0; i --) {
-    str2 += x.charAt(i)
-  }
+  var str2 = x.split('').reverse().join('');
+  // for(var i = x.length; i >= 0; i --) {
+  //   str2 += x.charAt(i)
+  // }
   if(str1 === str2) {
     return true
   }else {
@@ -17,4 +17,4 @@ var isPalindrome = function(x) {
   }
 };
 
-console.log(isPalindrome(-1234321))
+console.log(isPalindrome(1234321))
