@@ -20,6 +20,5 @@ var candy = function(ratings) {
   })
   return sum
 };
-
-var t = [1,2,3,2,5,6]
+var t = [1,2,2,3,1,4]
 console.log(candy(t))
